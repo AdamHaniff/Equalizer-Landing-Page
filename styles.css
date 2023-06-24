@@ -1,0 +1,486 @@
+:root {
+  /********** COLORS **********/
+  --cyan: #66e2dc;
+  --darkOrange: #fa7453;
+  --lightOrange: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+
+  /********** FONT FAMILY **********/
+  --ibmPlexSans: "IBM Plex Sans", sans-serif;
+
+  /********** FONT WEIGHTS **********/
+  --fw400: 400;
+  --fw700: 700;
+}
+
+/********** GENERAL **********/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: var(--ibmPlexSans);
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url("starter-code/assets/bg-main-mobile.png");
+  background-position: right -200px top -240px;
+  background-repeat: no-repeat;
+}
+
+/********** HEADER **********/
+.header {
+  margin: 10.7% 0% 17% 6.4%;
+}
+
+/********** HERO SECTION **********/
+.hero-header {
+  font-weight: var(--fw700);
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: -0.454545px;
+  color: var(--black);
+  margin-bottom: 5.3%;
+}
+
+.hero-paragraph {
+  font-weight: var(--fw400);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--black);
+}
+
+.hero-section {
+  margin: 0% 6.4% 44.3%;
+}
+
+/********** FEATURES SECTION *********/
+.app-pattern-container {
+  background-color: var(--black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0% 12.8%;
+  border-radius: 1.2rem;
+}
+
+.app-img {
+  max-width: 20.8rem;
+  max-height: 43rem;
+  margin-top: -9.8rem;
+  z-index: 2;
+}
+
+.pattern-img {
+  z-index: 1;
+  margin-top: -32.9rem;
+  max-width: 28rem;
+  max-height: 42rem;
+}
+
+.pricing-container {
+  background-color: var(--darkOrange);
+  padding: 12.8% 9.9%;
+  border-radius: 1.2rem;
+  position: relative;
+  z-index: 1;
+  margin-top: -4rem;
+}
+
+.pricing-header {
+  font-weight: var(--fw700);
+  font-size: 3.2rem;
+  line-height: 4rem;
+  color: var(--white);
+  margin-bottom: 3.2%;
+}
+
+.pricing-paragraph {
+  font-weight: var(--fw400);
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: var(--white);
+  margin-bottom: 9.6%;
+}
+
+.price-container {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+  margin-bottom: 8.6%;
+}
+
+.dollar-text {
+  font-weight: var(--fw700);
+  font-size: 6.5rem;
+  line-height: 5.2rem;
+  color: var(--white);
+}
+
+.per-month-text {
+  font-weight: var(--fw400);
+  font-size: 2rem;
+  line-height: 3.2rem;
+  letter-spacing: -0.2px;
+  color: var(--white);
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  gap: 2.1%;
+  padding: 4% 0%;
+  border-radius: 1.2rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+  font-family: var(--ibmPlexSans);
+  transition: all 0.3s;
+}
+
+.ios-btn {
+  margin-bottom: 4.2%;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.android-btn {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.features-section {
+  margin-bottom: 17%;
+}
+
+/********** FOOTER **********/
+.footer {
+  margin: 0% 6.4%;
+}
+
+.logo-img-footer {
+  margin-bottom: 8.5%;
+}
+
+.footer-paragraph {
+  font-weight: var(--fw400);
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  color: var(--black);
+  margin-bottom: 17%;
+}
+
+.social-media-container {
+  display: flex;
+  align-items: center;
+  gap: 5.3%;
+}
+
+.social-media-icon path {
+  transition: all 0.3s;
+}
+
+.footer-container {
+  padding-bottom: 21.3%;
+}
+
+/******** CENTERING CONTAINERS *******/
+.hero-section-container,
+.features-section-container,
+.footer-container {
+  margin: 0 auto;
+}
+
+/************ HOVER STATES ************/
+.ios-btn:is(:hover, :focus) {
+  cursor: pointer;
+  background-color: var(--cyan);
+}
+
+.android-btn:is(:hover, :focus) {
+  cursor: pointer;
+  background-color: var(--lightOrange);
+}
+
+.social-media-icon path:is(:hover, :focus) {
+  cursor: pointer;
+  fill: var(--darkOrange);
+}
+
+.email-text:is(:hover, :focus) {
+  cursor: pointer;
+}
+
+/********** TABLET MEDIA QUERY *******/
+
+/*************** 768 px **************/
+@media (min-width: 48em) {
+  /*************** GENERAL ***********/
+  body {
+    background-image: url("starter-code/assets/bg-main-tablet.png");
+    background-position: right -120px top -270px;
+  }
+
+  /*************** HEADER ************/
+  .header {
+    margin: 8% 0% 12.4% 5%;
+  }
+
+  /*********** HERO SECTION **********/
+  .hero-header {
+    font-size: 6.4rem;
+    line-height: 6.4rem;
+    letter-spacing: -0.73px;
+    min-width: 52rem;
+    min-height: 19.2rem;
+    margin-bottom: 3.6%;
+  }
+
+  .hero-paragraph {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    max-width: 51.4rem;
+    max-height: 11.2rem;
+  }
+
+  .hero-section {
+    margin: 0% 27.2% 32.4% 5%;
+  }
+
+  .hero-header::after {
+    content: "";
+    display: block;
+    background-image: url("starter-code/assets/bg-pattern-1.svg");
+    background-size: cover;
+    height: 400px;
+    width: 266.67px;
+    position: absolute;
+    top: -32px;
+    right: -35px;
+  }
+
+  /********** FEATURES SECTION *******/
+  .features-section {
+    margin: 0% 5% 23.8% 4.3%;
+  }
+
+  .features-section-container {
+    position: relative;
+  }
+
+  .app-pattern-container {
+    width: 69.6rem;
+    height: 60rem;
+  }
+
+  .app-img {
+    max-width: 27rem;
+    max-height: 55.6rem;
+    margin-left: -30rem;
+    margin-top: -13.8rem;
+  }
+
+  .pattern-img {
+    margin-top: -45rem;
+    margin-left: 4rem;
+  }
+
+  .pricing-container {
+    width: 39.9rem;
+    height: 54.6rem;
+    z-index: 3;
+    position: absolute;
+    top: 190px;
+    left: 238px;
+    padding: 4.8rem;
+  }
+
+  .pricing-header {
+    margin-bottom: 1.2rem;
+  }
+
+  .pricing-paragraph {
+    margin-bottom: 3.6rem;
+  }
+
+  .price-container {
+    margin-bottom: 3.2rem;
+  }
+
+  .ios-btn {
+    margin-bottom: 1.6rem;
+  }
+
+  /*************** FOOTER ************/
+  .footer {
+    margin: 0% 5% 11% 4.3%;
+  }
+
+  .logo-img-footer {
+    margin-bottom: 3.2rem;
+  }
+
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1.9fr 1fr;
+    padding-bottom: 0;
+  }
+
+  .footer-paragraph {
+    max-width: 36.6rem;
+    max-height: 7.9rem;
+    grid-row: 2 / 3;
+  }
+
+  .social-media-container {
+    grid-row: 2 / 3;
+    gap: 2rem;
+    justify-self: end;
+    margin-top: -7rem;
+  }
+}
+
+/********** DESKTOP MEDIA QUERY ******/
+
+/************* 1440 PX ***************/
+@media (min-width: 90em) {
+  /************* GENERAL *************/
+  body {
+    background-image: url("starter-code/assets/bg-main-desktop.png");
+    background-position: right -180px top -270px;
+  }
+
+  /************** HEADER *************/
+  .header {
+    margin: 4.3% 0% 8.9% 11.5%;
+  }
+
+  /********** HERO SECTION ***********/
+  .hero-header {
+    font-size: 8.8rem;
+    line-height: 8.8rem;
+    letter-spacing: -1px;
+    max-width: 101.5rem;
+    max-height: 17.6rem;
+    margin-bottom: 2.8%;
+  }
+
+  .hero-paragraph {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    max-width: 82.5rem;
+    max-height: 10.2rem;
+  }
+
+  .hero-section {
+    margin: 0% 0% 22.2% 11.4%;
+  }
+
+  .hero-header::after {
+    height: 468px;
+    width: 312px;
+    top: -40px;
+    right: 0px;
+  }
+
+  /********* FEATURES SECTION ********/
+  .features-section {
+    margin: 0% 11.5% 14%;
+  }
+
+  .app-pattern-container {
+    width: 111rem;
+    height: 60rem;
+  }
+
+  .app-img {
+    max-width: 31.2rem;
+    max-height: 64.2rem;
+    margin-left: -59.5rem;
+    margin-top: -21.1rem;
+  }
+
+  .pattern-img {
+    max-width: 31.2rem;
+    max-height: 46.8rem;
+    margin-left: -12.7rem;
+    margin-top: -46.9rem;
+  }
+
+  .pricing-container {
+    width: 44.6rem;
+    height: 62.5rem;
+    padding: 5.8rem 5.9rem 4.8rem 5.4rem;
+    top: 132px;
+    left: 569px;
+  }
+
+  .pricing-header {
+    font-size: 4rem;
+    line-height: 5.2rem;
+    margin-bottom: 2.2rem;
+  }
+
+  .pricing-paragraph {
+    font-size: 2rem;
+    line-height: 3.4rem;
+    margin-bottom: 3.9rem;
+  }
+
+  .price-container {
+    margin-bottom: 4.6rem;
+  }
+
+  .btn {
+    gap: 0.79rem;
+    padding: 1.5rem 0;
+  }
+
+  .ios-btn {
+    margin-bottom: 1.6rem;
+  }
+
+  .features-section {
+    margin-bottom: 14%;
+  }
+
+  /************** FOOTER *************/
+  .footer {
+    margin: 0% 11.5% 0%;
+    padding-bottom: 6.3%;
+  }
+
+  .footer-container {
+    display: flex;
+  }
+
+  .logo-img-footer,
+  .footer-paragraph {
+    margin-bottom: 0;
+  }
+
+  .logo-img-footer {
+    max-width: 14.609rem;
+    max-height: 3.2rem;
+  }
+
+  .footer-logo-link {
+    max-width: 14.609rem;
+    max-height: 3.2rem;
+    margin-right: 13.776rem;
+  }
+
+  .social-media-container {
+    margin: auto 0 auto auto;
+  }
+}
