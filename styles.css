@@ -30,7 +30,7 @@ body {
 
 body {
   background-image: url("starter-code/assets/bg-main-mobile.png");
-  background-position: right -200px top -240px;
+  background-position: right -20rem top -24rem;
   background-repeat: no-repeat;
 }
 
@@ -44,7 +44,7 @@ body {
   font-weight: var(--fw700);
   font-size: 4rem;
   line-height: 4.8rem;
-  letter-spacing: -0.454545px;
+  letter-spacing: -0.0454545rem;
   color: var(--black);
   margin-bottom: 5.3%;
 }
@@ -127,7 +127,7 @@ body {
   font-weight: var(--fw400);
   font-size: 2rem;
   line-height: 3.2rem;
-  letter-spacing: -0.2px;
+  letter-spacing: -0.02rem;
   color: var(--white);
 }
 
@@ -228,7 +228,7 @@ body {
   /*************** GENERAL ***********/
   body {
     background-image: url("starter-code/assets/bg-main-tablet.png");
-    background-position: right -120px top -270px;
+    background-position: right -12rem top -27rem;
   }
 
   /*************** HEADER ************/
@@ -240,7 +240,7 @@ body {
   .hero-header {
     font-size: 6.4rem;
     line-height: 6.4rem;
-    letter-spacing: -0.73px;
+    letter-spacing: -0.073rem;
     min-width: 52rem;
     min-height: 19.2rem;
     margin-bottom: 3.6%;
@@ -262,11 +262,11 @@ body {
     display: block;
     background-image: url("starter-code/assets/bg-pattern-1.svg");
     background-size: cover;
-    height: 400px;
-    width: 266.67px;
+    height: 40rem;
+    width: 26.667rem;
     position: absolute;
-    top: -32px;
-    right: -35px;
+    top: -3.2rem;
+    right: -3.5rem;
   }
 
   /********** FEATURES SECTION *******/
@@ -300,8 +300,8 @@ body {
     height: 54.6rem;
     z-index: 3;
     position: absolute;
-    top: 190px;
-    left: 238px;
+    top: 19rem;
+    left: 23.8rem;
     padding: 4.8rem;
   }
 
@@ -357,7 +357,7 @@ body {
   /************* GENERAL *************/
   body {
     background-image: url("starter-code/assets/bg-main-desktop.png");
-    background-position: right -180px top -270px;
+    background-position: right -18rem top -27rem;
   }
 
   /************** HEADER *************/
@@ -369,7 +369,7 @@ body {
   .hero-header {
     font-size: 8.8rem;
     line-height: 8.8rem;
-    letter-spacing: -1px;
+    letter-spacing: -0.1rem;
     max-width: 101.5rem;
     max-height: 17.6rem;
     margin-bottom: 2.8%;
@@ -387,10 +387,10 @@ body {
   }
 
   .hero-header::after {
-    height: 468px;
-    width: 312px;
-    top: -40px;
-    right: 0px;
+    height: 46.8rem;
+    width: 31.2rem;
+    top: -4rem;
+    right: 0;
   }
 
   /********* FEATURES SECTION ********/
@@ -421,8 +421,8 @@ body {
     width: 44.6rem;
     height: 62.5rem;
     padding: 5.8rem 5.9rem 4.8rem 5.4rem;
-    top: 132px;
-    left: 569px;
+    top: 13.2rem;
+    left: 56.9rem;
   }
 
   .pricing-header {
